@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
+import Work from "./components/work/Work";
 
 const App = () => {
   return (
@@ -16,17 +17,13 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
-        <Parallax type="services" />
+      <section id="portfolio">
+        <Parallax type="portfolio" />
       </section>
       <section>
         <Services />
       </section>
-      <section id="Portfolio">
-        <Parallax type="portfolio" />
-      </section>
-      <Portfolio />
-      <section id="Contact">
+      <section id="contact">
         <Contact />
       </section>
       {/* Framer Motion Crash Course */}

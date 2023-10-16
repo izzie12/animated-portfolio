@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import Work from "../work/Work";
 
 const items = [
   {
@@ -70,7 +71,17 @@ const Portfolio = () => {
   });
 
   return (
+
     <div className="portfolio" ref={ref}>
+      <div className="progress">
+        <h1>Featured Works</h1>
+        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+      </div>
+      <Work/>
+      </div>
+
+  )
+    {/* <div className="portfolio" ref={ref}>
       <div className="progress">
         <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
@@ -78,8 +89,8 @@ const Portfolio = () => {
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}
-    </div>
-  );
+      </div> */}
+  ;
 };
 
 export default Portfolio;
